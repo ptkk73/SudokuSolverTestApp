@@ -1,0 +1,5 @@
+<div *ngFor="let row of tiles">
+  <div *ngFor="let rowItem of row">
+    <app-sudoku-tile [tileInfo]="rowItem"> </app-sudoku-tile>
+  </div>
+</div>

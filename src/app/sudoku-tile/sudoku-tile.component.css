@@ -1,0 +1,22 @@
+.sudoku-tile-main-number {
+  margin: 0 auto;
+  float: none;
+  text-align: center;
+  position: relative;
+  height: 20px;
+  width: 20px;
+  top: 12px;
+  font-size: 28px;
+  font-weight: bold;
+}
+
+.sudoku-tile-matches {
+  float: left;
+  font-size: 11px;
+  position: relative;
+  top: -20px;
+}
+
+.sudoku-tile-clear {
+  clear: both;
+}
