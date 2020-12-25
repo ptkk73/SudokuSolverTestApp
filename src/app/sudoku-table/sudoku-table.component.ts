@@ -19,19 +19,19 @@ export class SudokuTableComponent implements OnInit {
     [1, 2, 3, 4, 5, 6, 7, 8, 9]
   ];
 
-  tiles: SudokuTileInfo[][];
+  tiles: any;
 
   constructor() {
     console.info("Hay there");
-    // this.tiles = this.sudokuTable.map(row => {
-    //   row.map(rowItem => {
-    //     let s = new SudokuTileInfo();
-    //     s.officialNumber = rowItem;
-    //     return s as SudokuTileInfo;
-    //   });
-    // });
+    this.tiles = this.sudokuTable.map(row => {
+      return row.map(rowItem => {
+        let s = new SudokuTileInfo();
+        s.officialNumber = rowItem;
+        return s;
+      });
+    });
 
-    console.info(this.sudokuTable);
+    console.info(this.tiles);
   }
 
   ngOnInit() {}

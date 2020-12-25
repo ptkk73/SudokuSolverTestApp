@@ -9,7 +9,7 @@ import { Input } from "@angular/core";
 })
 export class SudokuTileComponent implements OnInit {
   //tile: SudokuTileInfo;
-  @Input() tileInfo: number;
+  @Input() tileInfo: SudokuTileInfo;
 
   constructor() {
     // console.info("asdasdasd")
@@ -19,4 +19,8 @@ export class SudokuTileComponent implements OnInit {
   }
 
   ngOnInit() {}
+
+  getSuggestionStyle(i: number) {
+    return "background-color: pink;";
+  }
 }
